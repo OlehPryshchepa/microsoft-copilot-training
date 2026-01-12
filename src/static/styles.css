@@ -171,4 +171,34 @@ footer {
   border-radius: 16px;
   font-size: 13px;
   border: 1px solid #bbdefb;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.participants-list li span {
+  flex: 1;
+}
+
+.delete-participant {
+  background-color: transparent;
+  color: #c62828;
+  border: none;
+  padding: 2px 6px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+
+.delete-participant:hover {
+  background-color: #ffcdd2;
+  color: #b71c1c;
 }
